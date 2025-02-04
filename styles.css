@@ -7,24 +7,34 @@
     box-sizing: border-box;
 }
 
+:root {
+--background-white: rgba(245, 245, 245, 0.877);
+--form-background: var(--background-white);
+
+}
+
 .rubik-moonrocks-regular {
     font-family: "Moonrocks", serif;
     font-weight: 400;
     font-style: normal;
   }
-  
+
 /* MAIN SECTION */
 body {
     display: flex;
 }
 
-.cover {
+.cover img{
     height: 100vh;
-    flex: 1;
-    position: sticky;
+    /* flex: 1; */
 }
 
 .signup {
-    flex: 2;
-    box-shadow: 10px 5px 5px black;
+    flex: 1;
+    box-shadow: 10px 5px 50px black;
+    background-color: var(--form-background);
+}
+
+.form {
+    background-color: red;
 }
