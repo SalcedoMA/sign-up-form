@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline:none;
 }
 
 :root {
@@ -93,8 +94,11 @@ form h2 {
     color: rgb(51, 51, 51);
 }
 
-input,
-textarea {
+form p {
+    color: rgb(63, 63, 63);
+}
+
+input {
   width: 400px;
   height: 40px;
   border-radius: 5px;
@@ -132,4 +136,22 @@ p > a {
     color: #d4afa5;
     text-shadow: 0px 0px 0px rgb(117, 117, 117);
     cursor: crosshair;
+}
+
+
+/* INPUT VALIDATION STATUS */
+input:focus {
+    border: none;
+    border: 2px solid rgb(0, 102, 255);
+    box-shadow: 0 0 5px rgb(0, 102, 255);
+}
+
+input:invalid {
+    border: 2px solid rgb(199, 0, 0);
+    box-shadow: 0 0 5px rgb(199, 0, 0);
+}
+
+input:valid {
+    border: 2px solid rgb(0, 151, 8);
+    box-shadow: 0 0 5px rgb(0, 151, 8);
 }
