@@ -8,6 +8,8 @@
 }
 
 :root {
+--inside-yellow: #fcf3d3;
+--light-yellow: #fff8de;
 --shadow: rgb(194, 194, 194);
 --light-gray: rgba(245, 245, 245, 0.877);
 --white: rgb(255, 255, 255);
@@ -26,14 +28,17 @@
 body {
     display: flex;
     font-family: sistem-ui, Tahoma, Geneva, Verdana, sans-serif;
+    /* height: max(auto, 100vh); */
 }
 
 .cover {
+    display: flex;
     flex: 1;
     background-color: #D4AFA5;
 }
 .cover img{
-    object-fit: cover;
+    object-fit: contain;
+    max-width: 100%;
 }
 
 
@@ -89,12 +94,13 @@ form h2 {
 }
 
 input,
-textarea,
-select {
+textarea {
   width: 400px;
   height: 40px;
   border-radius: 5px;
   border: 1px solid rgb(197, 197, 197);
+  font-size: 1.2rem;
+  padding-left: 10px;
 }
 
 /* SUBMIT SECTION */
