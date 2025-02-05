@@ -50,6 +50,7 @@ body {
 .form-title {
     width:  75ch;
     font-size: 2rem;
+    color: rgb(51, 51, 51);
 }
 
 .form-container {
@@ -64,6 +65,54 @@ body {
 
 .section {
     display: flex;
-    padding: 10px 0;
+    padding: 15px 0;
     gap: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(161, 161, 161);
+}
+
+form h2 {
+    font-size: 2.2rem;
+    padding: 0 0 1rem 0;
+    color: rgb(51, 51, 51);
+}
+
+input,
+textarea,
+select {
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(197, 197, 197);
+}
+
+.submit button {
+    width: 300px;
+    height: 75px;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #D4AFA5;
+    box-shadow: 3px 3px 10px rgb(190, 190, 190);
+    color: whitesmoke;
+    font-weight: 1000;
+}
+
+.submit {
+    padding: 3% 5%;
+
+}
+
+.submit p {
+    color: rgb(73, 73, 73);
+    margin: 20px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+p > a {
+    color: #d4afa5;
+    text-shadow: 0px 0px 0px rgb(117, 117, 117);
+    cursor: crosshair;
 }
