@@ -146,12 +146,12 @@ input:focus {
     box-shadow: 0 0 5px rgb(0, 102, 255);
 }
 
-input:invalid {
+.input:invalid {
     border: 2px solid rgb(199, 0, 0);
     box-shadow: 0 0 5px rgb(199, 0, 0);
 }
 
-input:valid {
+.input:valid {
     border: 2px solid rgb(0, 151, 8);
     box-shadow: 0 0 5px rgb(0, 151, 8);
 }
