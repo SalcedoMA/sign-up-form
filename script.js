@@ -21,6 +21,12 @@ signupButton.addEventListener('click', event => {
     if (form.checkValidity() === true) {
         alert('Imagine I know how to submit this form ;)')
         event.preventDefault()
+    } else {
+        for (let input of inputs) {
+            if (input.required === true) {
+                input.className = 'input';
+            }
+        }
     }
 })
 
