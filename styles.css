@@ -108,6 +108,11 @@ input {
 }
 
 /* SUBMIT SECTION */
+
+.submit {
+    padding: 3% 5%;
+
+}
 .submit button {
     width: 300px;
     height: 75px;
@@ -115,15 +120,17 @@ input {
     border: none;
     border-radius: 10px;
     background-color: #D4AFA5;
-    box-shadow: 3px 3px 10px rgb(190, 190, 190);
+    box-shadow: 3px 3px 5px #9c6f62;
     color: whitesmoke;
     font-weight: 1000;
 }
 
-.submit {
-    padding: 3% 5%;
-
+.submit button:active {
+    background-color: #fcf3d3;
+    box-shadow: inset 3px 3px 5px #ccbf86;
+    color: #ccbf86;
 }
+
 
 .submit p {
     color: rgb(73, 73, 73);
@@ -138,6 +145,9 @@ p > a {
     cursor: crosshair;
 }
 
+p > a:hover {
+    text-decoration: underline;
+}
 
 /* INPUT VALIDATION STATUS */
 input:focus {
