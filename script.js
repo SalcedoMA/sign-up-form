@@ -20,6 +20,7 @@ formDiv.addEventListener('click', event => {
 signupButton.addEventListener('click', event => {
     if (form.checkValidity() === true) {
         alert('Imagine I know how to submit this form ;)')
+        event.preventDefault()
     }
 })
 
